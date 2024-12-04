@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON to Excel Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>JSON to Excel Converter</h1>
+    <p>Enter your JSON array of objects in the textbox below:</p>
+    <textarea id="json-input" rows="10" cols="50" placeholder="[{ \"Name\": \"John\", \"Age\": 30, \"City\": \"New York\" }]"></textarea>
+    <br>
+    <button id="download-btn">Download Excel</button>
+    <p class="note">Ensure the JSON is valid and represents an array of objects.</p>
+  </div>
+
+  <!-- Include SheetJS library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
